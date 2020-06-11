@@ -139,9 +139,9 @@ def forif(request):
 ## 4. 그 외면 C 출력
 
 def presentation(request):
-    students = ['강인선','곽혜란']
+    students = ['강인선','곽혜란','김민정','김성현','김현수','백승재','이정윤']
     random.shuffle(students)
     context = {
         'students' : students
     }
-    return render(request, 'presentation.html')
+    return render(request, 'presentation.html', context)
