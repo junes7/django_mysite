@@ -1,0 +1,12 @@
+<h1>발표순서</h1>
+<style>
+  li:hover {
+    cursor: pointer;
+    background-color: silver;
+  }
+</style>
+<ol>
+  {% for name in students %}
+    <li>{{ name }}</li>
+  {% endfor %}
+</ol>
